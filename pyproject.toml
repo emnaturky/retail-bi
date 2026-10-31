@@ -1,0 +1,23 @@
+[project]
+name = "retail-bi"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "emnaturky", email = "emna.turki@isgb.ucar.tn" }
+]
+requires-python = ">=3.10"
+dependencies = [
+    "matplotlib>=3.10.9",
+    "openpyxl>=3.1.5",
+    "pandas>=2.3.3",
+    "pytest>=9.2.0",
+    "requests>=2.34.2",
+]
+
+[project.scripts]
+retail-bi = "retail_bi:main"
+
+[build-system]
+requires = ["uv_build>=0.13.6,<0.14.0"]
+build-backend = "uv_build"
